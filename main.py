@@ -16,7 +16,6 @@ for i in range(10):
 
 # Преобразование пользовательского ввода в DataFrame
 df1 = pd.DataFrame([user_input])
-df1 = pd.read_excel('/content/results_ed1.xlsx')
 # Добавление столбца 'omathinfo'
 # Добавление столбца 'omathinfo' с условием
 df1['mathinfo1'] = ((df1['math1'] + df1['info1']) / df1['sum1']).apply(lambda x: 1 if x >= 0.243 else 0)
